@@ -3,7 +3,7 @@ function DaysForcast(props) {
     const days = props.daily.filter(entry => entry.dt_txt.includes("12:00:00"));
   return (
     <div className='weekly-forcast'>
-        <p>7 Days Forcast</p>
+        <p> 5 Days Forcast</p>
         <div className='sorting'>
             {days.map((day) => (
                 <div key ={day.dt} className='day-forcast'>
