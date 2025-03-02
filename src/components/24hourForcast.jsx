@@ -1,37 +1,4 @@
-// import React from 'react'
-
-// const example  = [
-//     {
-//         time : "6:00 AM",
-//         img : "/src/assets/sunny-svgrepo-com.svg",
-//         degree : "25"
-//     },
-//     {
-//         time : "9:00 AM",
-//         img : "/src/assets/sunny-svgrepo-com.svg",
-//         degree : "25"
-//     },
-//     {
-//         time : "12:00 PM",
-//         img : "/src/assets/sunny-svgrepo-com.svg",
-//         degree : "25"
-//     },
-//     {
-//         time : "3:00 PM",
-//         img : "/src/assets/sunny-svgrepo-com.svg",
-//         degree : "25"
-//     },
-//     {
-//         time : "6:00 PM",
-//         img : "/src/assets/cloud-solid (1).svg",
-//         degree : "25"
-//     },
-//     {
-//         time : "9:00 PM",
-//         img : "/src/assets/cloud-solid (1).svg",
-//         degree : "25"
-//     }
-// ]
+import React from 'react'
 
  function HourForcast(props) {
     const list = props.list;

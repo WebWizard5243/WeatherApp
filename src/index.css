@@ -179,7 +179,7 @@ h2{
 .day-forcast{
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  gap: 25%;
+  gap: 18%;
   font-size: 1.20rem;
   color: #676B73;
   transition: transform 0.15s;
@@ -216,13 +216,13 @@ h2{
     height: 20px;
   }
   .today-forcast {
-    margin-right: 6%;
+    margin-right: 7%;
   }
   .weather-info{
-    margin-right: 6%;
+    margin-right: 7%;
   }
   .current-forcast{
-    margin-right: 6%;
+    margin-right: 7%;
   }
   .weather-icon{
     width: 110px;
@@ -230,7 +230,7 @@ h2{
   }
   .weekly-forcast{
     margin-left: 4% ;
-    margin-right: 6%;
+    margin-right: 7%;
     max-width: 676px;
     margin-bottom: 4%;
   }
