@@ -1,6 +1,6 @@
 import React, {useState} from 'react'
 import axios from 'axios';
-import CurrentWeather from './Components/currentWeather';
+import CurrentWeather from './Components/CurrentWeather';
 import SearchBar from './components/SearchBar';
 import HourForcast from './components/24hourForcast';
 import WeatherInfo from './components/WeatherInfo';
