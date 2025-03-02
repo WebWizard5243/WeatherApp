@@ -1,0 +1,237 @@
+*{
+  border: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  /* background-image: linear-gradient(to bottom right,#742BEC,#060C1A); */
+  background-color:#060C1A;
+  color: white;
+  font-family: "Inter", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+.weather-icon{
+  width: 150px;
+  height: 150px;
+}
+h1{
+  text-align: center;
+  margin-bottom: 5%;
+  font-size: 3.5rem;
+  background:linear-gradient(to bottom right,white,#742BEC);
+  -webkit-background-clip: text;
+            background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.search-bar{
+  background-color: #0E1421;
+  color: white;
+  border-radius: 35px;
+  width: 80vw;
+  max-height: 51px;
+  border: 0.5px solid #742BEC;
+  text-align: left;
+  padding: 16px 20px;
+  margin-top: 12px;
+  margin-left: 8%;
+  font-size: 0.85rem;
+}
+h2{
+  margin-top: 2%;
+  text-align: center;
+  font-size: 2.0rem;
+}
+.current-forcast{
+  background-color:#060C1A;
+  max-width: 676px;
+  max-height: 231px;
+  border-radius: 10px;
+  padding: 10px 17px;
+  margin-top: 20px;
+  margin-left: 6%;
+  display: flex;
+  justify-content: space-between;
+  transition: transform 0.15s
+}
+.current-forcast:hover{
+  transform: scale(1.04);
+  transition: transform 0.15s
+}
+.text{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  font-size: 1.75rem;
+}
+.text h2{
+  font-size: 2rem;
+}
+.icons{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  text-align: right;
+  font-size: 1.5rem;
+  font-weight: 200;
+}
+.today-forcast{
+   background-color:#0E1421;
+   max-width: 676px;
+  max-height: 231px;
+  border-radius: 10px;
+  padding: 10px 17px;
+  margin-top: 20px;
+  margin-left: 4%;
+  transition: transform 0.15s;
+}
+.today-forcast:hover{
+  transform: scale(1.04);
+  transition: transform 0.15s;
+}
+.today-forcast .forcast-heading {
+  margin-left: 8px;
+  font-size: 0.85rem;
+  color: #676B73;
+}
+.hourly-forcast{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  gap: 1%;
+}
+.forcast img {
+  width: 50px;
+  height: 50px;
+}
+.forcast{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  color: white;
+  transition: transform 0.15s;
+}
+.forcast:hover{
+  transform: scale(1.08);
+  transition: transform 0.15s;
+}
+.forcast .time{
+  color: #676B73;
+}
+.weather-info {
+  background-color:#0E1421;
+  max-width: 676px;
+  max-height: 231px;
+  border-radius: 10px;
+  padding: 10px 17px;
+  margin-top: 20px;
+  margin-left: 4%;
+  display: grid;
+  grid-template-columns: 1.5fr 1.5fr;
+  grid-template-rows:  1fr 1fr;
+  margin-bottom: 3%;
+  transition: transform 0.15s;
+}
+.weather-info:hover{
+  transform: scale(1.04);
+  transition: transform 0.15s;
+}
+.info{
+  margin-top: -10px;
+  margin-left: 10%;
+  transition: transform 0.15s;
+}
+.info h3{
+  margin-left: 20px;
+  margin-top: 2px;
+}
+.info:hover{
+  transform: scale(1.1);
+  transition: transform 0.15s;
+}
+.info-img{
+  display: flex;
+  align-items: center;
+}
+.info-img p{
+  color : #676B73;
+}
+.info-img img {
+  width: 20px;
+  height: 20px;
+  margin-right: 7px;
+  opacity: 50%;
+}
+.webpage{
+ display: grid;
+ grid-template-columns: 1fr 1fr;
+ gap: 4%;
+}
+.weekly-forcast{
+  background-color:#0E1421;
+  max-width: 576px;
+  height: 682px;
+  padding: 17px 27px;
+  margin-top: 20px;
+  border-radius: 10px;
+}
+.day-forcast{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 25%;
+  font-size: 1.20rem;
+  color: #676B73;
+  transition: transform 0.15s;
+}
+.day-forcast:hover{
+  transform: scale(1.02);
+  transition: transform 0.15s;
+}
+.day-img{
+  display: flex;
+  align-items: center;
+}
+.sorting{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 65px;
+}
+.day-img img{
+  width: 20px;
+  height: 20px;
+  margin-right: 5px;
+}
+@media(max-width : 920px){
+  .webpage{
+    margin-left: 10px;
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+  }
+  
+  .forcast-img{
+    width: 20px;
+    height: 20px;
+  }
+  .today-forcast {
+    margin-right: 6%;
+  }
+  .weather-info{
+    margin-right: 6%;
+  }
+  .current-forcast{
+    margin-right: 6%;
+  }
+  .weather-icon{
+    width: 110px;
+    height: 110px;
+  }
+  .weekly-forcast{
+    margin-left: 4% ;
+    margin-right: 6%;
+    max-width: 676px;
+    margin-bottom: 4%;
+  }
+}
